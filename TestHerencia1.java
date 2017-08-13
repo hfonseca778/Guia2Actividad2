@@ -13,7 +13,7 @@ public class TestHerencia1 {
        int salir = 1;
        String EstudianteNombre;
        int EstudianteEdad;
-       String Carrera = "Sistemas";
+       String EstudianteCarrera = "Sistemas";
        int Semestre;
        int Dormir = 0;
        int Comer = 0;
@@ -28,7 +28,7 @@ public class TestHerencia1 {
        EstudianteEdad = lector.nextInt();
               
        System.out.println("\nIntroduzca la carrera que estudia el alumno: "); 
-       Carrera = lector.nextLine();
+       EstudianteCarrera = lector.nextLine();
        
        System.out.println("\nIntroduzca el semestre académico en el que vá el alumno: "); 
        Semestre = lector.nextInt();
@@ -70,7 +70,7 @@ public class TestHerencia1 {
        while(salir==1);
        
        Estudiante mEstudiante = new Estudiante(EstudianteNombre, EstudianteEdad, Dormir, Comer);
-       mEstudiante.setCarrera(Carrera);
+       mEstudiante.setCarrera(EstudianteCarrera);
        mEstudiante.setSemestre(Semestre);
        mEstudiante.setEstudiar(Estudiar);
        mEstudiante.setExamen(Examen);
